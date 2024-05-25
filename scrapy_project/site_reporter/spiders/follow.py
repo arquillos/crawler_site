@@ -53,16 +53,15 @@ class FollowAllSpider(CrawlSpider):
         title = ""
         depth = 0
         failure.check()
+
+        # Checking for errors
         if failure.check(HttpError):
-            # these exceptions come from HttpError spider middleware
-            # you can get the non-200 response
             response = failure.value.response
             self.logger.error("HttpError on %s", response.url)
             url = response.url
             title = "HttpError"
             depth = response.meta.get("depth", 0)
         elif failure.check(DNSLookupError):
-            # this is the original request
             request = failure.request
             self.logger.error("DNSLookupError on %s", request.url)
             url = request.url

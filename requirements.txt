@@ -1,3 +1,8 @@
+# This file should be splitted in two: requirements-scrapy_project.txt and requirements-beautifulsoup_project.txt
+# scrapy_project dependencies
 Scrapy==2.11.2
 scrapyscript==1.1.5
 beautifulsoup4==4.12.3
+# beautifulsoup_project dependencies
+aiohttp==3.9.5
+lxml==5.2.2

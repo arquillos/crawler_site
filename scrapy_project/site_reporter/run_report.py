@@ -25,7 +25,7 @@ def process_result() -> list[dict]:
 
 
 def print_header(header: str) -> None:
-    """Missing doc"""
+    """Print a header"""
     print("-----------------")
     print(f"- {header} -")
     print("-----------------")
