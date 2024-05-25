@@ -4,7 +4,7 @@ This project demonstrates web scraping using two different approaches:
 - Python's Scrapy framework
 - Python's BeautifulSoup library (WIP)
 
-The website used to ther the project is:
+The website used to test the project is:
 - https://crawler-test.com
 
 
