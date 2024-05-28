@@ -37,19 +37,24 @@ The goal is to scan a given website in parallel and generate a report with the f
     pip install -r requirements.txt
 
 # Project execution
+Requirement: Activate the venv
+
+    .venv\Scripts\activate
 
 ## Scrapy
-    .venv\Scripts\activate
+    cd scrapy_project
     cd site_reporter
     python .\run_report.py
 
 ### Executing the spider only
-    .venv\Scripts\activate
+    cd scrapy_project
     cd site_reporter
     scrapy crawl follow_all -o follow.1.json
 
+Output file: follow.1.json
+
+
 ## BeautifulSoup
-    .venv\Scripts\activate
     cd .\beautifulsoup_project
     python .\crawler.py
 
